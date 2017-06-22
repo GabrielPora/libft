@@ -87,6 +87,7 @@ SRCS_NAME3 = ft_strmap.c \
 			ft_printf_long.c \
 			ft_printf_nbr_ld.c \
 			ft_printf.c \
+			ft_swap_int	\
 
 SRCS_NAME4 = ft_lstadd.c \
 			ft_lstiter.c \

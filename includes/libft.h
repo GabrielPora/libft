@@ -134,5 +134,6 @@ char				*ft_strtrim_free(char const *s);
 void				ft_exit(char *message, int exit_status);
 void				ft_putul(size_t n);
 void				ft_putul_fd(size_t n, int fd);
+int					ft_swap_int(int i);
 
 #endif
