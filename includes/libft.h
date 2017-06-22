@@ -134,6 +134,12 @@ char				*ft_strtrim_free(char const *s);
 void				ft_exit(char *message, int exit_status);
 void				ft_putul(size_t n);
 void				ft_putul_fd(size_t n, int fd);
+
 int					ft_swap_int(int i);
+long long			ft_swap_long(long long l);
+short				ft_swap_short(short s);
+unsigned int		ft_swap_uint(unsigned int i);
+unsigned long long	ft_swap_ulong(unsigned long long l);
+unsigned short		ft_swap_ushort(unsigned short s);
 
 #endif

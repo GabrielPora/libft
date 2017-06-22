@@ -87,7 +87,6 @@ SRCS_NAME3 = ft_strmap.c \
 			ft_printf_long.c \
 			ft_printf_nbr_ld.c \
 			ft_printf.c \
-			ft_swap_int	\
 
 SRCS_NAME4 = ft_lstadd.c \
 			ft_lstiter.c \
@@ -111,7 +110,16 @@ SRCS_NAME4 = ft_lstadd.c \
 			ft_atol.c \
 			ft_putul.c \
 			ft_putul_fd.c \
-			get_next_line.c 
+			get_next_line.c \
+
+SRCS_NAME5 = ft_swap_long.c \
+			ft_swap_ulong.c \
+			ft_swap_int.c	\
+			ft_swap_uint.c	\
+			ft_swap_short.c \
+			ft_swap_ushort.c 
+
+SRCS5 = $(addprefix $(SRCS_PATH), $(SRCS_NAME5))
 
 SRCS4 = $(addprefix $(SRCS_PATH), $(SRCS_NAME4))
 
@@ -121,7 +129,7 @@ SRCS2 = $(addprefix $(SRCS_PATH), $(SRCS_NAME2))
 
 SRCS1 = $(addprefix $(SRCS_PATH), $(SRCS_NAME1))
 
-SRCS = $(SRCS1) $(SRCS2) $(SRCS3) $(SRCS4)
+SRCS = $(SRCS1) $(SRCS2) $(SRCS3) $(SRCS4) $(SRCS5)
 
 HEADER = 	$(INCLUDES_PATH)libft.h \
 
@@ -177,5 +185,7 @@ norm:
 	@echo "SRCS3 Done:"
 	@norminette	$(SRCS4)
 	@echo "SRCS4 Done:"
+	@norminette	$(SRCS5)
+	@echo "SRCS5 Done:"
 	
 .PHONY: clean fclean re odir
