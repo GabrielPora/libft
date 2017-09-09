@@ -18,7 +18,7 @@ int		ft_buffreader(int fd, char **line)
 	char	*temp;
 	int		readline;
 
-	if (!(buff = (char *)malloc(BUFF_SIZE + 1)))
+	if (!(buff = (char *)ft_strnew(BUFF_SIZE + 1)))
 		return (-1);
 	readline = read(fd, buff, BUFF_SIZE);
 	if (readline > 0)
@@ -41,7 +41,7 @@ int		get_next_line(const int fd, char **line)
 	char			*str;
 	int				ret;
 
-	if (!buf && !(buf = (char *)malloc(1)))
+	if (!buf && !(buf = (char *)ft_strnew(1)))
 		return (-1);
 	while ((str = ft_strchr(buf, '\n')) == NULL)
 	{
