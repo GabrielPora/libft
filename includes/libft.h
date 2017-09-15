@@ -26,12 +26,23 @@
 # define BUFF_SIZE 32
 # define HEX "0123456789abcdef"
 
+# define BASE_STR static char *b = "0123456789ABCDEF"
+
 typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_base_var
+{
+	long int		num;
+	long int		l;
+	unsigned int	k;
+	long int		ba;
+	char			*str;
+}					t_base_var;
 
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
@@ -141,5 +152,7 @@ short				ft_swap_short(short s);
 unsigned int		ft_swap_uint(unsigned int i);
 unsigned long long	ft_swap_ulong(unsigned long long l);
 unsigned short		ft_swap_ushort(unsigned short s);
+
+char				*ft_itoa_base(int value, int base);
 
 #endif

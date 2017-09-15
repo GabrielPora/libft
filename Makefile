@@ -117,7 +117,8 @@ SRCS_NAME5 = ft_swap_long.c \
 			ft_swap_int.c	\
 			ft_swap_uint.c	\
 			ft_swap_short.c \
-			ft_swap_ushort.c 
+			ft_swap_ushort.c \
+			ft_itoa_base.c \
 
 SRCS5 = $(addprefix $(SRCS_PATH), $(SRCS_NAME5))
 
