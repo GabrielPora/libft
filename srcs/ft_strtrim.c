@@ -20,8 +20,9 @@ char	*ft_strtrim(char const *s)
 
 	start = 0;
 	end = 0;
-	if (s)
-		len_s = ft_strlen(s);
+	if (!s)
+		return (NULL);
+	len_s = ft_strlen(s);
 	while (s && *(s + start) && (*(s + start) == ' ' || *(s + start) == '\n'\
 				|| *(s + start) == '\t'))
 		start++;
